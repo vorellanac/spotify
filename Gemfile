@@ -6,6 +6,8 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
 # implement divise
 gem 'devise'
+# implement railroudy
+gem 'railroady'
 
 gem 'sqlite3'
 # Use Puma as the app server
