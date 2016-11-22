@@ -8,3 +8,51 @@
 
 
 # Seeds
+
+# users
+User.destroy_all
+User.crete(
+		[
+			{
+				name: 'Agustin',
+				email: 'agus@gmail.com'
+				password: '123456'
+			},
+			{
+				name: 'vicente',
+				email: 'hulkvice@gmail.com'
+				password: '654321'
+			}	
+		]
+	)
+
+# Genre
+Genre.create(
+		[
+			{
+				name: 'pop'
+			},
+			{
+				name: 'rock'
+			},
+			{
+				name: 'electro'
+			},
+			{
+				name: 'reggae'
+			},
+		]
+	)
+
+# Song
+Song.create(
+		[
+			{
+				name: 'One love'
+				duration: 3
+				genre_id: 4
+			}
+		]
+	)
+   
+

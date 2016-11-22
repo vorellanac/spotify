@@ -1,11 +1,39 @@
-<%= render 'layouts/navbar'%>
-<div class="container">
 
-	<h1>Spotify</h1>
+<%= render 'layouts/navbar'%>
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+	<h1>Songs</h1>
+
+	<table>
+	  <thead>
+	    <tr>
+	      <th>Name</th>
+	      <th colspan="10"></th>
+	      <th>Duration</th>
+	      <th colspan="10"></th>
+	      <th>Genre</th>
+	      <th colspan="10"></th>
+	    </tr>
+	  </thead>
+
+	  <tbody>
+	    <% @songs.each do |song| %>
+	      <tr>
+	        <td><%= song.name %></td>
+	        <td><%= song.duration %></td>
+	        <td><%= song.genre %></td>
+	        <td><%= link_to 'Show', song %></td>
+	        <td><%= link_to 'Edit', edit_song_path(song) %></td>
+	        <td><%= link_to 'Destroy', song, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	      </tr>
+	    <% end %>
+	  </tbody>
+	</table>
+
 	<br>
 
-	<h4>Crear tú playlist</h4>
+	<%= link_to 'New Song', new_song_path %> 
 
-	
+
 </div>
-

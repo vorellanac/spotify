@@ -8,6 +8,10 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'devise'
 # implement railroudy
 gem 'railroady'
+# Cancancan
+gem 'cancancan'
+# carrierwave
+gem 'carrierwave'
 
 gem 'sqlite3'
 # Use Puma as the app server
