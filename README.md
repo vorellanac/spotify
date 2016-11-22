@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+* Link github: https://github.com/vorellanac/spotify
+* Link heroku: https://aqueous-temple-71199.herokuapp.com/ | https://git.heroku.com/aqueous-temple-71199.git
